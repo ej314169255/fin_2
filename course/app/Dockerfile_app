@@ -9,9 +9,4 @@ RUN mkdir -p /var/run/sshd
 
 WORKDIR /app
 
-COPY ../ .
-
-#RUN pip install black
-
-#ENTRYPOINT ["black", ".", "--check"]
 ENTRYPOINT ["echo", "hey!"]

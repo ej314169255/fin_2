@@ -4,7 +4,7 @@ sleep 1
 
 if [ true ]
 then
-  python3 ../selenium_test.py
+  python3 selenium_test.py
 
   status=$?
 

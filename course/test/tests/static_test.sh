@@ -1,10 +1,12 @@
 #!/bin/bash
 
+root=$(dirname $0)
+
 sleep 1
 
 if [ true ]
 then
-  ! black ../unit_code_pylint.py --check
+  ! black unit_code_pylint.py --check
 
   status=$?
 

@@ -4,7 +4,7 @@ sleep 1
 
 if [ true ]
 then
-  ! pylint ../unit_code_pylint.py --enable C0301,E0401,W0401,C0410,E0602,R0903,W0212,R1735,C0209,C0411
+  ! pylint unit_code_pylint.py --enable C0301,E0401,W0401,C0410,E0602,R0903,W0212,R1735,C0209,C0411
 
   status=$?
 

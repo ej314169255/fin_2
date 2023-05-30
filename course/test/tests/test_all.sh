@@ -9,25 +9,25 @@ echo "\033[31m===============\nRun pipeline\n===============\033[0m"
 
 start_black_linter() {
     echo "\n\033[35m=============== Run black linter test ===============\033[0m\n"
-    bash ${root}/static_test.sh
+    bash ./static_test.sh
     static=$(echo $?)
 }
 
 start_pylint() {
     echo "\n\033[35m===============Run PyLint for 10 categories test===============\033[0m\n"
-    bash ${root}/style_test.sh
+    bash ./style_test.sh
     style=$(echo $?)
 }
 
 start_selenium_tests() {
     echo "\n\033[35m=============== Run Selenium tests ===============\033[0m\n"
-    bash ${root}/selenium_test.sh
+    bash ./selenium_test.sh
     selenium=$(echo $?)
 }
 
 start_integration_tests() {
     echo "\n\033[35m=============== Run Integration tests ===============\033[0m\n"
-    bash ${root}/integration_test.sh
+    bash ./integration_test.sh
     integration=$(echo $?)
 }
 

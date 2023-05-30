@@ -5,7 +5,7 @@ sleep 1
 if [ true ]
 
 then
-  python3 ../request.py
+  python3 request.py
 
   status=$?
 
